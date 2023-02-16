@@ -1,5 +1,5 @@
 pipeline {
-    agent Forspc
+    agent {label 'Forspc'}
     stages {
         stage('Source Code') {
             steps {
