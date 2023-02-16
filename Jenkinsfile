@@ -24,7 +24,6 @@ pipeline {
         }
        stage('deploy'){
         steps{
-            sh 'kubectl create secret docker-registry cred --docker-server=https://index.docker.io/v1/ --docker-username=yaswithaa --docker-password=Aadya@1104 --docker-email=yaswitha.t@gmail.com'
             sh 'kubectl apply -f deploy.yaml'
             
         }
