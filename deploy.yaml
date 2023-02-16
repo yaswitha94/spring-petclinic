@@ -24,7 +24,7 @@ spec:
         - name: spc
           image: yaswithaa/spc:DEV
           ports:
-            - containerPort: 80
+            - containerPort: 8080
               protocol: TCP
           readinessProbe:
             httpGet:
