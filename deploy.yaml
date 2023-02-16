@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deploy
+  name: spc-deploy
 spec:
   minReadySeconds: 5
   replicas: 4
@@ -23,8 +23,8 @@ spec:
       containers:
         - name: spc
           image: yaswithaa/spc:DEV
-      imagePullSecrets:
-        - name: mycred
+          imagePullSecrets:
+            - name: cred
           ports:
             - containerPort: 80
               protocol: TCP
