@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: spc
-          image: yaswithaa/spc:DEV
+          image: yaswithaa/spc
           ports:
             - containerPort: 80
               protocol: TCP
