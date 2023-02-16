@@ -11,7 +11,7 @@ pipeline {
        stage("Build and Push"){
             steps{
                   sh 'docker image build -t yaswithaa/spc:DEV .'
-                  sh 'docker image push yaswithaa/spc:DEV .'
+                  sh 'docker image push yaswithaa/spc:DEV'
             }
        }
     }
