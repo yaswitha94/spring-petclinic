@@ -14,5 +14,10 @@ pipeline {
                   sh 'docker image push yaswithaa/spc:DEV'
             }
        }
+       stage('deploy'){
+        steps{
+            sh 'kubectl apply -f deployments/deploy.yaml'
+        }
+       }
     }
 }    
