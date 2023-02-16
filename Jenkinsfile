@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent Forspc
     stages {
         stage('Source Code') {
             steps {
