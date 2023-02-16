@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: spc-deploy
+  name: nginx-deploy
 spec:
   minReadySeconds: 5
   replicas: 4
@@ -24,7 +24,7 @@ spec:
         - name: spc
           image: yaswithaa/spc:DEV
           ports:
-            - containerPort: 8080
+            - containerPort: 80
               protocol: TCP
           readinessProbe:
             httpGet:
